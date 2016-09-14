@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vive Test</title>
+    <meta name="description" content="Vive Test">
+    <script src="lib/aframe.min.js"></script>
+    <script src="lib/aframe-extras.min.js"></script>
+  </head>
+  <body>
+    <!-- Moon gravity -->
+    <a-scene physics='gravity: -9.8' antialias='true'>
+      <a-assets>
+        <video id="video" src="http://demo.bitspacedevelopment.com/video/360.mov"
+               autoplay loop crossorigin></video>
+      </a-assets>
+
+      <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
+    </a-scene>
+  </body>
+</html>
